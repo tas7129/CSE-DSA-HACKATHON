@@ -40,6 +40,17 @@ class SolverTests(unittest.TestCase):
             g=generate_maze(8,2,seed)
             path=shortest_path(g)
             self.assertIsNotNone(path)
+    def test_generated_keys_and_doors_are_spread_along_route(self):
+        maze=generate_maze(16,4,seed=23)
+        key_positions=[]; door_positions=[]
+        for r,row in enumerate(maze.grid):
+            for c,tile in enumerate(row):
+                if tile in 'abcdef': key_positions.append((r,c))
+                elif tile in 'ABCDFG': door_positions.append((r,c))
+        self.assertEqual(len(key_positions),4)
+        self.assertEqual(len(door_positions),4)
+        self.assertGreater(max(r+c for r,c in door_positions), min(r+c for r,c in key_positions))
+
     def test_unsolvable_generator(self):
         for types in (1, 3, 6):
             maze=generate_unsolvable_maze(max(14, 2*types+2),types,seed=types)
