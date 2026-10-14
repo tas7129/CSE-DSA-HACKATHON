@@ -6,6 +6,8 @@ This project compares two ways to find the nearest pair among two-dimensional po
 
 Open [`index.html`](index.html) in any modern browser. It runs entirely in the browser: choose the point count, random seed, and coordinate range, then generate points to see the required three-line result, both closest pairs, the divide-and-conquer strip, and measured runtimes. Use **Run benchmark** to draw a timing comparison across increasing input sizes up to the selected N. The input rejects N < 2. No terminal, Python installation, or server is needed for the visual demo.
 
+For the detailed algorithm rationale, complexity analysis, strip proof, and corner-case discussion, see the [Closest Pair analysis PDF](output/pdf/closest-pair-analysis.pdf).
+
 To publish it on GitHub, push this folder to a repository and enable **Settings → Pages** for the branch and folder that contain `index.html`. GitHub Pages will serve the interactive demo as a website.
 
 The Python command-line implementation below remains available for source-code study and automated tests.
