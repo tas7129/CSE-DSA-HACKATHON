@@ -2,6 +2,8 @@
 
 A beginner-friendly flight planner that minimizes ticket cost while limiting intermediate stops and applying up to a chosen number of half-price coupons.
 
+See [the detailed algorithm explanation](docs/algorithm-explanation.pdf) for the expanded-state Dijkstra design, correctness reasoning, worked example, and complexity analysis.
+
 ## Example
 
 For `1 → 2` at 500 and `2 → 4` at 600, with `K=1` and one coupon, the cheapest trip costs `250 + 600 = 850` (or `500 + 300 = 800`, so the solver places the coupon on the more expensive flight). It considers both choices as separate search transitions.
