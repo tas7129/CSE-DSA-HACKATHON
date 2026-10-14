@@ -4,6 +4,8 @@ A beginner-friendly flight planner that minimizes ticket cost while limiting int
 
 See [the detailed algorithm explanation](docs/algorithm-explanation.pdf) for the expanded-state Dijkstra design, correctness reasoning, worked example, and complexity analysis.
 
+Submission files: [output PDF](Budget_traveller_output.pdf) · [algorithm explanation PDF](docs/budget-traveller-algorithm-explanation.pdf).
+
 ## Example
 
 For `1 → 2` at 500 and `2 → 4` at 600, with `K=1` and one coupon, the cheapest trip costs `250 + 600 = 850` (or `500 + 300 = 800`, so the solver places the coupon on the more expensive flight). It considers both choices as separate search transitions.

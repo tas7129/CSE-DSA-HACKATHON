@@ -8,6 +8,8 @@ Open [`index.html`](index.html) in any modern browser. It runs entirely in the b
 
 For the detailed algorithm rationale, complexity analysis, strip proof, and corner-case discussion, see the [Closest Pair analysis PDF](output/pdf/closest-pair-analysis.pdf).
 
+Submission output: [Closest Pair of Points PDF](Closest_Pair_output.pdf).
+
 To publish it on GitHub, push this folder to a repository and enable **Settings → Pages** for the branch and folder that contain `index.html`. GitHub Pages will serve the interactive demo as a website.
 
 The Python command-line implementation below remains available for source-code study and automated tests.

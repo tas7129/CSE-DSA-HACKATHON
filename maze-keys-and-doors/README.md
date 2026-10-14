@@ -1,5 +1,7 @@
 # Maze Solver with Keys and Doors
 
+Submission files: [output PDF](Maze_keys_door_output.pdf) · [design explanation PDF](output/pdf/maze-solver-design-explanation.pdf).
+
 A beginner-friendly Python 3 desktop application that finds and animates the shortest route through a square maze. It uses Tkinter and Python's standard library; there are no third-party dependencies.
 
 ## Project structure

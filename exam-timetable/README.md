@@ -4,6 +4,8 @@ A Java 17 / JavaFX desktop demonstration of exam scheduling as **capacitated gra
 
 The application compares deterministic DSatur (a fast heuristic) with branch-and-bound search (exact when it completes). The exact solver starts with the DSatur timetable as an upper bound, selects vertices by saturation, breaks colour symmetry, and prunes using the current best and the capacity lower bound. A timeout returns a validated best-known timetable and marks optimality unproven.
 
+Submission files: [output PDF](Exam_timetable_output.pdf) · [best-case analysis PDF](docs/best-case-analysis.pdf).
+
 ## Requirements and launch
 
 Install JDK 17 or later and Maven 3.9 or later. JavaFX dependencies are resolved by Maven; no separate JavaFX installation is required.
