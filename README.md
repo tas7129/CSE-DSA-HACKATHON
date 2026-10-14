@@ -21,3 +21,7 @@ To run its tests:
 cd maze-keys-and-doors
 python3 -m unittest discover -s tests -v
 ```
+# Algorithm project collection
+
+- [Exam Timetable Scheduling Using Graph Colouring](exam-timetable/README.md) — Java 17, Maven, and JavaFX implementation comparing DSatur with exact branch-and-bound.
+

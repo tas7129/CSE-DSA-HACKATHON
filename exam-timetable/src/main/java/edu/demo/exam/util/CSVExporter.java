@@ -1,0 +1,4 @@
+package edu.demo.exam.util;
+import edu.demo.exam.model.Timetable;import java.io.*;import java.nio.charset.StandardCharsets;import java.nio.file.*;import java.util.*;
+/** Writes one timetable row per slot and one column per hall. */
+public final class CSVExporter {private CSVExporter(){} public static void write(Path path,Timetable t,int capacity)throws IOException{if(capacity<1)throw new IllegalArgumentException("Capacity must be positive.");try(BufferedWriter w=Files.newBufferedWriter(path,StandardCharsets.UTF_8)){w.write("Slot");for(int i=1;i<=capacity;i++)w.write(",Hall "+i);w.newLine();List<List<Integer>> rows=t.bySlot();for(int s=0;s<rows.size();s++){w.write("Slot "+(s+1));for(int i=0;i<capacity;i++){w.write(',');if(i<rows.get(s).size())w.write("Course "+rows.get(s).get(i));}w.newLine();}}}}
