@@ -5,7 +5,7 @@ This repository contains three project submissions. Each project has its own fol
 ## Projects
 
 - [Maze Solver with Keys and Doors](maze-keys-and-doors/README.md) — Python and Tkinter application with BFS pathfinding, maze generation, CSV import/export, animation, and tests.
-- Add the second project in its own folder.
+- [Closest Pair of Points](closest-pair/index.html) — interactive browser demo; see its [project README](closest-pair/README.md) for the Python implementation and tests.
 - Add the third project in its own folder.
 
 To run the maze application:
